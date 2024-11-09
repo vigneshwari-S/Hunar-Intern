@@ -1,0 +1,236 @@
+/* style.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+header {
+    background-color: #141414;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #e50914;
+    text-decoration: none;
+}
+
+header nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+header nav a:hover {
+    color: #e50914;
+}
+
+.hero {
+    background: url('images/hero.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 4em;
+    margin: 10px;
+    color: #e50914;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin: 10px 0;
+    max-width: 800px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background-color: #e50914;
+    border: none;
+    font-size: 1.2em;
+    color: white;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #b20710;
+}
+
+section {
+    padding: 50px 20px;
+}
+
+section h2 {
+    color: #e50914;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #141414;
+    padding: 20px;
+    text-align: center;
+    color: gray;
+}
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.movie-card {
+    background-color: #222;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+}
+
+.movie-card h3 {
+    color: white;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.signin-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 5px;
+}
+
+.signin-form label {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+.signin-form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+}
+
+.signin-form button {
+    padding: 10px;
+    font-size: 1.2em;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.signin-form button:hover {
+    background-color: #b20710;
+}
+
+/* Feature container */
+.features__container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+/* Each feature */
+.feature {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature:nth-child(even) {
+    flex-direction: row-reverse; /* Reverse for even-numbered features */
+}
+
+/* Feature details */
+.feature__details {
+    flex: 1;
+    text-align: left;
+}
+
+.feature__title {
+    font-size: 1.8em;
+    color: #e50914;
+    margin-bottom: 10px;
+}
+
+.feature__sub__title {
+    font-size: 1.2em;
+    color: white;
+}
+
+/* Feature image */
+.feature__image__container {
+    flex: 1;
+    position: relative;
+}
+
+.feature__image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.feature__backgroud__video__container,
+.feature__2__poster__container,
+.feature__3__backgroud__video__container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none; /* Prevent interaction */
+}
+
+.feature__backgroud__video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .feature {
+        flex-direction: column;
+    }
+    .feature:nth-child(even) {
+        flex-direction: column; /* Keep column layout for small screens */
+    }
+}

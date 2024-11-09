@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone - Movies</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+        }
+
+        header {
+            background-color: #141414;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #e50914;
+            text-decoration: none;
+        }
+
+        header nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+
+        header nav a:hover {
+            color: #e50914;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        section h2 {
+            color: white;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .movie-row {
+            display: flex;
+            gap: 15px;
+            overflow-x: auto;
+            padding: 10px 0;
+        }
+
+        .movie-card {
+            flex: 0 0 auto;
+            width: 150px;
+            border-radius: 5px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .movie-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .movie-card:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: #141414;
+            padding: 20px;
+            text-align: center;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">NETFLIX</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="movie-list.html">Movies</a>
+            <a href="signin.html">Sign In</a>
+        </nav>
+    </header>
+    <section>
+        <h2>Movies</h2>
+        <div class="movie-row">
+            <!-- Movie Cards -->
+            <div class="movie-card">
+                <img src="images/1.png" alt="Movie 1">
+            </div>
+            <div class="movie-card">
+                <img src="images/2.jpg" alt="Movie 2">
+            </div>
+            <div class="movie-card">
+                <img src="images/3.jpg" alt="Movie 3">
+            </div>
+            <div class="movie-card">
+                <img src="images/4.jpg" alt="Movie 4">
+            </div>
+            <div class="movie-card">
+                <img src="images/5.jpg" alt="Movie 5">
+            </div>
+            <div class="movie-card">
+                <img src="images/2.jpg" alt="Movie 1">
+            </div>
+            <div class="movie-card">
+                <img src="images/6.jpg" alt="Movie 2">
+            </div>
+            <div class="movie-card">
+                <img src="images/7.jpg" alt="Movie 3">
+            </div>
+            <div class="movie-card">
+                <img src="images/8.jpg" alt="Movie 4">
+            </div>
+            <div class="movie-card">
+                <img src="images/9.jpg" alt="Movie 5">
+            </div>
+            <div class="movie-card">
+                <img src="images/2.jpg" alt="Movie 1">
+            </div>
+            <div class="movie-card">
+                <img src="images/2.jpg" alt="Movie 2">
+            </div>
+            <div class="movie-card">
+                <img src="https://picsum.photos/150/225?random=13" alt="Movie 3">
+            </div>
+            <div class="movie-card">
+                <img src="https://picsum.photos/150/225?random=14" alt="Movie 4">
+            </div>
+            <div class="movie-card">
+                <img src="https://picsum.photos/150/225?random=15" alt="Movie 5">
+            </div>
+            <div class="movie-card">
+                <img src="https://picsum.photos/150/225?random=16" alt="Movie 1">
+            </div>
+            <div class="movie-card">
+                <img src="https://picsum.photos/150/225?random=17" alt="Movie 2">
+            </div>
+            <div class="movie-card">
+                <img src="https://picsum.photos/150/225?random=18" alt="Movie 3">
+            </div>
+            <div class="movie-card">
+                <img src="https://picsum.photos/150/225?random=19" alt="Movie 4">
+            </div>
+            <div class="movie-card">
+                <img src="https://picsum.photos/150/225?random=20" alt="Movie 5">
+            </div>
+            <div class="movie-card">
+                <img src="https://picsum.photos/150/225?random=21" alt="Movie 1">
+            </div>
+            <div class="movie-card">
+                <img src="https://picsum.photos/150/225?random=22" alt="Movie 2">
+            </div>
+            <div class="movie-card">
+                <img src="https://picsum.photos/150/225?random=23" alt="Movie 3">
+            </div>
+            <div class="movie-card">
+                <img src="https://picsum.photos/150/225?random=24" alt="Movie 4">
+            </div>
+            <div class="movie-card">
+                <img src="https://picsum.photos/150/225?random=25" alt="Movie 5">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>© 2024 Netflix Clone | All rights reserved</p>
+    </footer>
+</body>
+</html>
