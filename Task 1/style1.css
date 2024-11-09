@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #333;
+    padding: 1em;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header .menu {
+    display: flex;
+    gap: 1em;
+}
+
+header .menu a, .contact-btn {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 0.5em 1em;
+    transition: color 0.3s ease;
+}
+
+header .menu a:hover, .contact-btn:hover {
+    color: #ffcc00;
+}
+.contact-btn {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: auto; /* Aligns the button to the right */
+}
+
+.contact-btn:hover {
+    background-color: #e6b800;}
+
+
+/* Home Section */
+#home {
+    display: flex; /* Use flexbox to align items */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh; /* Full viewport height */
+    background-color: #f0f0f0; /* Optional: Set a background color */
+}
+
+.home-content {
+    max-width: 600px; /* Limit the width of content */
+    text-align: center; /* Center text */
+}
+
+.home-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.home-content h1 span {
+    color: #ff5733;
+}
+
+.home-content p {
+    font-size: 1.1em;
+    margin-bottom: 1.5em;
+    line-height: 1.6;
+}
+
+.buttons {
+    display: flex;
+    gap: 1em;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 0.5em 1.5em;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #ff5733;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #e04d2c;
+}
+
+.btn-secondary {
+    background-color: #333;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #444;
+}
+
+/* Home Image */
+.home-image img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* About Section */
+body {
+    margin: 0; /* Reset default margin */
+    font-family: Arial, sans-serif; /* Set a default font */
+}
+
+#about {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    height: 100vh; /* Full viewport height */
+    background-color: #3a3e3e; /* Light blue background */
+    padding: 20px; /* Add some padding */
+    text-align: center; /* Center text */
+}
+
+.about-container {
+    background-color: white; /* Box background color */
+    padding: 70px; /* Padding inside the box */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 900px; /* Limit the width of the box */
+    width: 100%; /* Allow it to take full width within limits */
+}
+
+.about-image {
+    display: flex; /* Use flexbox to center the image */
+    justify-content: center; /* Center the image horizontally */
+    margin-bottom: 20px; /* Space below the image */
+}
+
+.about-image img {
+    width: 150px; /* Set a specific width for the circular image */
+    height: 150px; /* Set a specific height for the circular image */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Cover the area without stretching */
+    border: 3px solid #fff; /* Optional: Add a border */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+}
+
+.about-content {
+    margin-top: 20px; /* Space above the content */
+}
+/* Projects Section */
+#projects {
+    padding: 2em;
+    background-color: #f4f4f4;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: row; /* Change to row to align items horizontally */
+    flex-wrap: wrap; /* Allow items to wrap onto the next line */
+    justify-content: center; /* Center items horizontally */
+    align-items: flex-start; /* Align items at the start of the container */
+}
+
+.project {
+    background-color: #fff;
+    padding: 1em;
+    margin: 1em; /* Add uniform margin for spacing */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Set a fixed width for the project box */
+    height: 300px; /* Set a fixed height for a square box */
+    display: flex; /* Use flexbox for inner content */
+    flex-direction: column; /* Stack inner content vertically */
+    justify-content: center; /* Center inner content vertically */
+    align-items: center; /* Center inner content horizontally */
+}
+
+/* Contact Section */
+#contact {
+    padding: 2em;
+    background-color: #fff;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2em;
+    color: #ff5733;
+    margin-bottom: 1em;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact form input, #contact form textarea {
+    width: 100%;
+    padding: 0.8em;
+    margin: 0.5em 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#contact form button {
+    padding: 0.8em 2em;
+    background-color: #ff5733;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#contact form button:hover {
+    background-color: #e04d2c;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9em;
+}
