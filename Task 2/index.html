@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EasyLearn- Online Learning</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Easy<span class="highlight">Learn</span></div>
+    <nav>
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#register">Register</a></li>
+        <li><a href="#about_section">About Us</a></li> <!-- Corrected the 'href' to match the About section ID -->
+        <li><a href="#contactus_section">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="search-container">
+      <input type="text" placeholder="Search here..." class="search-input">
+      <button class="search-btn"><span>&#128269;</span></button>
+    </div>
+    <button class="get-started">Get Started</button>
+  </header>
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>The beautiful thing about learning is that nobody can take it away from you</h1>
+    <p>Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, beliefs, and habits. Educational methods include teaching, training, storytelling, discussion, and directed research!</p>
+    <button class="watch-btn">Watch Now</button>
+  </div>
+  <div class="hero-image">
+    <img src="images/svg1.jpg" alt="Learning Illustration">
+
+  </div>
+</section>
+<!-- ABOUT -->
+<div class="diffSection" id="about_section">
+  <center><p style="font-size: 50px; padding: 100px">About</p></center>
+  <div class="about-content">
+      <div class="side-image">
+        <img class="sideImage" src="images/e3.jpg">
+      </div>
+      <div class="side-text">
+        <h2>What you think about us ?</h2>
+        <p>Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, beliefs, and habits. Educational methods include teaching, training, storytelling, discussion and directed research.<br> Educational website can include websites that have games, videos or topic related resources that act as tools to enhance learning and supplement classroom teaching. These websites help make the process of learning entertaining and attractive to the student, especially in today's age. <br>Using HTML(HyperText Markup Language), CSS(Cascading Style Sheet), JavaScript, we can make learning more easier and in a interesting way.</p>
+      </div>
+  </div>
+</div>
+  <!-- Information Section -->
+  <section class="info-section">
+    <div class="info-card">
+      <h3>Learn From The Experts</h3>
+      <p>Our instructors are industry leaders and experts in their fields.</p>
+    </div>
+    <div class="info-card">
+      <h3>Book Library & Store</h3>
+      <p>Access a wide range of books and learning resources.</p>
+    </div>
+    <div class="info-card">
+      <h3>Best Course Online</h3>
+      <p>Choose from the best courses designed to upskill you.</p>
+    </div>
+    <div class="info-card">
+      <h3>Best Industry Leaders</h3>
+      <p>Learn from and connect with industry pioneers.</p>
+    </div>
+  </section>
+<!-- REGISTER -->
+<div class="title2" id="register">
+  <span>Register</span>
+  <div class="shortdesc2">
+    <p>Join us by creating your account</p>
+  </div>
+</div>
+
+<!-- New Wrapper for Background Image -->
+<div class="background-wrapper">
+  <div class="feedbox">
+    <div class="feed">
+      <form action="register-process.php" method="post">
+        <label for="username">Full Name</label><br>
+        <input type="text" name="username" id="username" class="input-field" placeholder="Enter your full name" required><br>
+        
+        <label for="email">Email</label><br>
+        <input type="email" name="email" id="email" class="input-field" placeholder="Enter your email" required><br>
+        
+        <label for="password">Password</label><br>
+        <input type="password" name="password" id="password" class="input-field" placeholder="Create a password" required><br>
+        
+        <label for="confirm-password">Confirm Password</label><br>
+        <input type="password" name="confirm-password" id="confirm-password" class="input-field" placeholder="Confirm your password" required><br>
+        
+        <label for="interests">Select Your Interests:</label><br>
+        <div class="checkbox-group">
+          <input type="checkbox" id="webdev" name="interests" value="Web Development">
+          <label for="webdev">Web Development</label><br>
+          <input type="checkbox" id="java" name="interests" value="Java">
+          <label for="java">Java</label><br>
+          <input type="checkbox" id="python" name="interests" value="Python">
+          <label for="python">Python</label><br>
+          <input type="checkbox" id="c" name="interests" value="C">
+          <label for="c">C</label><br>
+          <input type="checkbox" id="cpp" name="interests" value="C++">
+          <label for="cpp">C++</label><br>
+          <input type="checkbox" id="datascience" name="interests" value="Data Science">
+          <label for="datascience">Data Science</label><br>
+        </div>
+        
+        <label for="additional-info">Additional Information</label><br>
+        <textarea name="additional-info" id="additional-info" class="input-field" placeholder="Tell us more about yourself"></textarea><br>
+        
+        <button type="submit" id="csubmit" class="submit-btn">Register</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+  
+<!-- CONTACT US -->
+	<div class="diffSection" id="contactus_section">
+		<center><p style="font-size: 50px; padding: 100px">Contact Us</p></center>
+		<div class="csec"></div>
+		<div class="back-contact">
+			<div class="cc">
+			<form action="mailto:nmpro@gmail.com" method="post" enctype="text/plain">
+				<label>First Name <span class="imp">*</span></label><label style="margin-left: 185px">Last Name <span class="imp">*</span></label><br>
+				<center>
+				<input type="text" name="" style="margin-right: 10px; width: 175px" required="required"><input type="text" name="lname" style="width: 175px" required="required"><br>
+				</center>
+				<label>Email <span class="imp">*</span></label><br>
+				<input type="email" name="mail" style="width: 100%" required="required"><br>
+				<label>Message <span class="imp">*</span></label><br>
+				<input type="text" name="message" style="width: 100%" required="required"><br>
+				<label>Additional Details</label><br>
+				<textarea name="addtional"></textarea><br>
+				<button type="submit" id="csubmit">Send Message</button>
+			</form>
+			</div>
+		</div>
+	</div>
+
+
+  <footer>
+    <p>@easylearn learn from anywhere !!!</p>
+  </footer>
+</body>
+</html>
