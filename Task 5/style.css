@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Baloo Bhai 2", cursive;
+    color: white;
+    background-color: #1c1c1c;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .left img {
+    width: 80px;
+    filter: invert(100%);
+  }
+  
+  .navbar {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .navbar li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+  
+  .navbar li a:hover,
+  .navbar li a.active {
+    text-decoration: underline;
+    color: gray;
+  }
+  
+  .cont {
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid white;
+    width: 90%;
+    max-width: 500px;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .cont h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .formgroup input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+    font-size: 16px;
+  }
+  
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background: rgb(73, 73, 73);
+  }
+  
+  section {
+    padding: 60px 10%;
+    background-size: cover;
+    background-position: center;
+    color: white;
+  }
+  #home {
+    background: url('https://i.postimg.cc/KzPQXFm4/Boxing-girl.jpg') no-repeat center center / cover;
+  }
+  
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: gray;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+    }
+  
+    header {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .cont {
+      width: 95%;
+    }
+  }
+  

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dumble Fitness Club</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="head">
+    <div class="left">
+      <img src="https://i.postimg.cc/QdR1bPct/logo2.png" alt="Dumble Fitness Club" />
+      <div>Fitness Club</div>
+    </div>
+    <ul class="navbar">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#calculator">Fitness Calculator</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home">
+    <div class="cont">
+      <h1>Join the best GYM of Vasai now!</h1>
+      <form action="#noaction.php">
+        <div class="formgroup">
+          <input type="text" placeholder="Enter Name" />
+        </div>
+        <div class="formgroup">
+          <input type="text" placeholder="Enter Age" />
+        </div>
+        <div class="formgroup">
+          <input type="text" placeholder="Enter Gender" />
+        </div>
+        <div class="formgroup">
+          <input type="text" placeholder="Enter Your Locality" />
+        </div>
+        <button class="btn submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Fitness Calculator Section -->
+  <section id="calculator">
+    <div class="cont">
+      <h1>Calculate Your Fitness Score</h1>
+      <form>
+        <div class="formgroup">
+          <input type="number" placeholder="Enter Weight (kg)" />
+        </div>
+        <div class="formgroup">
+          <input type="number" placeholder="Enter Height (cm)" />
+        </div>
+        <button class="btn submit">Calculate BMI</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about">
+    <div class="cont">
+      <h1>About Our Fitness Club</h1>
+      <p>
+        Dumble Fitness Club is committed to providing the best facilities and trainers to help you achieve your fitness goals. Located in the heart of Vasai, we offer modern equipment, personalized training programs, and a supportive community.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section id="contact">
+    <div class="cont">
+      <h1>Contact Us</h1>
+      <p>Email: contact@dumblefitness.com</p>
+      <p>Phone: +91-12345-67890</p>
+      <p>Address: Vasai, Maharashtra, India</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Dumble Fitness Club. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Smooth scrolling for navigation
+    document.querySelectorAll('.navbar a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>

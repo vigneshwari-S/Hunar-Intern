@@ -1,0 +1,228 @@
+#HTML 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dumble Fitness Club</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="head">
+    <div class="left">
+      <img src="https://i.postimg.cc/QdR1bPct/logo2.png" alt="Dumble Fitness Club" />
+      <div>Fitness Club</div>
+    </div>
+    <ul class="navbar">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#calculator">Fitness Calculator</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home">
+    <div class="cont">
+      <h1>Join the best GYM of Vasai now!</h1>
+      <form action="#noaction.php">
+        <div class="formgroup">
+          <input type="text" placeholder="Enter Name" />
+        </div>
+        <div class="formgroup">
+          <input type="text" placeholder="Enter Age" />
+        </div>
+        <div class="formgroup">
+          <input type="text" placeholder="Enter Gender" />
+        </div>
+        <div class="formgroup">
+          <input type="text" placeholder="Enter Your Locality" />
+        </div>
+        <button class="btn submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Fitness Calculator Section -->
+  <section id="calculator">
+    <div class="cont">
+      <h1>Calculate Your Fitness Score</h1>
+      <form>
+        <div class="formgroup">
+          <input type="number" placeholder="Enter Weight (kg)" />
+        </div>
+        <div class="formgroup">
+          <input type="number" placeholder="Enter Height (cm)" />
+        </div>
+        <button class="btn submit">Calculate BMI</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about">
+    <div class="cont">
+      <h1>About Our Fitness Club</h1>
+      <p>
+        Dumble Fitness Club is committed to providing the best facilities and trainers to help you achieve your fitness goals. Located in the heart of Vasai, we offer modern equipment, personalized training programs, and a supportive community.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section id="contact">
+    <div class="cont">
+      <h1>Contact Us</h1>
+      <p>Email: contact@dumblefitness.com</p>
+      <p>Phone: +91-12345-67890</p>
+      <p>Address: Vasai, Maharashtra, India</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Dumble Fitness Club. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Smooth scrolling for navigation
+    document.querySelectorAll('.navbar a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+#css
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Baloo Bhai 2", cursive;
+    color: white;
+    background-color: #1c1c1c;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .left img {
+    width: 80px;
+    filter: invert(100%);
+  }
+  
+  .navbar {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .navbar li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+  
+  .navbar li a:hover,
+  .navbar li a.active {
+    text-decoration: underline;
+    color: gray;
+  }
+  
+  .cont {
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid white;
+    width: 90%;
+    max-width: 500px;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .cont h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .formgroup input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+    font-size: 16px;
+  }
+  
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background: rgb(73, 73, 73);
+  }
+  
+  section {
+    padding: 60px 10%;
+    background-size: cover;
+    background-position: center;
+    color: white;
+  }
+  #home {
+    background: url('https://i.postimg.cc/KzPQXFm4/Boxing-girl.jpg') no-repeat center center / cover;
+  }
+  
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: gray;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+    }
+  
+    header {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .cont {
+      width: 95%;
+    }
+  }
+  
